@@ -5,9 +5,15 @@
   "author": "richard.beddington@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "html-minifier": "^4.0.0"
+    "html-minifier": "^4.0.0",
+    "husky": "^2.3.0"
   },
   "scripts": {
-    "minify": "html-minifier"
+    "minify": "html-minifier --collapse-whitespace --minify-css true --remove-attribute-quotes --remove-comments --remove-empty-attributes --remove-optional-tags --remove-redundant-attributes -o index.html src.html"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn minify && git add ./index.html"
+    }
   }
 }
