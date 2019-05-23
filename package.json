@@ -1,0 +1,13 @@
+{
+  "name": "vaccines.guide",
+  "version": "1.0.0",
+  "main": "index.html",
+  "author": "richard.beddington@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "html-minifier": "^4.0.0"
+  },
+  "scripts": {
+    "minify": "html-minifier"
+  }
+}
