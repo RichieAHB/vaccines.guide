@@ -9,7 +9,7 @@
     "husky": "^2.3.0"
   },
   "scripts": {
-    "minify": "html-minifier --collapse-whitespace --minify-css true --remove-attribute-quotes --remove-comments --remove-empty-attributes --remove-optional-tags --remove-redundant-attributes -o index.html src.html"
+    "minify": "html-minifier --collapse-whitespace --minify-css true --remove-attribute-quotes --remove-comments --remove-empty-attributes --remove-redundant-attributes -o index.html src.html"
   },
   "husky": {
     "hooks": {
